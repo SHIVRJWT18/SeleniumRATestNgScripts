@@ -6,11 +6,17 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
+/**
+ * Adv and Disadv of Headless Mode:
+ * Pros: Faster execution and supports parallel testing.
+ * Cons: UI actions are not visible, making the test flow harder to understand.
+ */
+
 public class HeadlessBrowsers {
 
 	public static void main(String[] args) {
 	ChromeOptions co = new ChromeOptions();
-	co.addArguments("--headless");
+	co.addArguments("--headless=new"); // Setting for headless browser
 	
 	WebDriver d1 = new ChromeDriver(co);
 	d1.get("https://practicetestautomation.com/practice-test-login/");
