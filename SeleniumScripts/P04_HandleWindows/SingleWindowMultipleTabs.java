@@ -21,7 +21,7 @@ public class SingleWindowMultipleTabs {
 		Set<String> alltabs = d.getWindowHandles();
 		List<String> alltabwindow = new ArrayList<String>(alltabs);
 		System.out.println("FirstTabTitle: "+d.getTitle());
-		String secondtab = alltabwindow.getLast();
+		String secondtab = alltabwindow.get(1);
 		d.switchTo().window(secondtab);
 		System.out.println("SecondTabTitle: "+d.getTitle());
 

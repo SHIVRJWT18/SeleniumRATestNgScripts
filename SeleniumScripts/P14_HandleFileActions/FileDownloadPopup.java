@@ -1,4 +1,4 @@
-package P06_HandleAlertsPopUps;
+package P14_HandleFileActions;
 
 import java.awt.AWTException;
 import java.io.File;

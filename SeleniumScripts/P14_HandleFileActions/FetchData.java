@@ -1,4 +1,4 @@
-package FileOperations;
+package P14_HandleFileActions;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -13,11 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class FetchData {
-    static
-    {
-    	System.setProperty("webdriver.chrome.driver", "./Sel.drivers/chromedriver.exe");
-    	System.setProperty("webdriver.gecko.driver","./Sel.drivers/geckodriver.exe");
-    }
+
     public static void main(String[] args) throws IOException {
 	File f = new File("./Files/ReadData.xlsx");
 	FileInputStream fis =  new FileInputStream(f);
