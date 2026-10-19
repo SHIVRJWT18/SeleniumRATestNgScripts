@@ -1,6 +1,6 @@
-package P15_DataProviders_ExcelNotepad;
+package P15_DataProvidersViaFiles;
 
-public class Excel_Read_Write {
+public class ExcelUtilityMethods {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

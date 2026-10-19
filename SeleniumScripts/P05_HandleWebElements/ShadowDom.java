@@ -46,7 +46,7 @@ public class ShadowDom {
 		Thread.sleep(1000); // Waiting to load the inner child DOM
 
 		WebElement Nestedshadowdomelem = childshadow2.findElement(By.cssSelector("#multi-nested-shadow-element"));
-		System.out.println("Element in NestedShadow is : "+Nestedshadowdomelem.getText());
+		System.out.println("Element in InnerNestedShadow is : "+Nestedshadowdomelem.getText());
 
 		d.close();
 	}

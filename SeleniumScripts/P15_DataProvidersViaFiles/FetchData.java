@@ -1,4 +1,4 @@
-package P15_DataProviders_ExcelNotepad;
+package P15_DataProvidersViaFiles;
 
 import java.io.File;
 import java.io.FileInputStream;
