@@ -64,32 +64,27 @@ public class DynamicWebTable {
 	    }
 	    System.out.println("============================");
 	    
-	  /*  //8. Read those bookname and its price whose authors is Mukesh	    
-	    trData = d.findElements(By.cssSelector("[name='BookTable'] tr td:nth-child(2)"));
-
-	    for (WebElement cell : trData) {
-	      if (cell.getText().equalsIgnoreCase("Mukesh")) {
-          WebElement row = cell.findElement(By.xpath("./parent::tr")); // Get the parent row
-   
-          String bkname = row.findElement(By.cssSelector("td:nth-child(1)")).getText(); // Get BookName (1st column)    
-          String price = row.findElement(By.cssSelector("td:nth-child(4)")).getText(); // Get Price (4th column)
-          System.out.println("Book Name: " + bkname);
-          System.out.println("Author: " + cell.getText());
-          System.out.println("Price: " + price);
-          }
-	    }
-	    System.out.println("============================");
-	    
-	    //9. Calculate total price of all books
-	    tdData = d.findElements(By.cssSelector("[name='BookTable'] tr td:nth-child(4)"));
-        int total=0;
-	    for(WebElement elem : tdData)
-        {
-         total = total+ Integer.parseInt(elem.getText());        	
+	   //8. Get and compare CPU load of firefox browser	  
+	    String cpuload, ntwrkload = "";
+        
+        for (WebElement getrow : trows) {
+            String processname = getrow.findElement(By.cssSelector("./td:nth-child(1)")).getText();
+            System.out.println("Process name: "+processname);
+            if (processname.equals("Firefox")) {
+                cpuload = getrow.findElement(By.xpath("./td[contains(text(), '%')]")).getText();
+                System.out.println("Firefox CPU Load: " + cpuload);
+                ntwrkload = getrow.findElement(By.xpath("./td[contains(text(), 'Mbps')]")).getText();
+                System.out.println("Firefox Ntwk Load: " + ntwrkload);
+                break;
+            }
         }
-	    System.out.println("Total Price: "+total);
+
+        // Compare CPU load with the yellow box value
+        String getyellowboxload = d.findElement(By.cssSelector(".bg-warning.p-1")).getText();
+        System.out.println("Yellow box value: " + getyellowboxload);
+
 	    d.close();
-*/
+
 	}
 
 }

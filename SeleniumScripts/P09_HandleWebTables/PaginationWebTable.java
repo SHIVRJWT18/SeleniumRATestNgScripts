@@ -30,10 +30,8 @@ public class PaginationWebTable {
          }
          
          // Reading Bookname and authors pf the books
-         List<WebElement> rows = d.findElements(
-                 By.xpath("//tbody[@data-testid='table-body']//tr"));
-
-         
+         List<WebElement> rows = d.findElements(By.xpath("//tbody[@data-testid='table-body']//tr"));
+     
          for (WebElement row : rows) {
           String bookname = row.findElement(By.xpath("./td[2]")).getText();
           String isbnNo = row.findElement(By.xpath("./td[5]")).getText();
@@ -42,7 +40,7 @@ public class PaginationWebTable {
 
          }  	 
          }
-        }}
-        	
+        }
+}  	
         
 

@@ -1,4 +1,4 @@
-package P15_DataProvidersViaFiles;
+package P16_HandleFileActions;
 
 import java.io.File;
 import java.io.FileInputStream;
