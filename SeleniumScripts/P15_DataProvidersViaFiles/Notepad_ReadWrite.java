@@ -29,7 +29,6 @@ public class Notepad_ReadWrite {
     FileOutputStream fos = new FileOutputStream(fwrite);
 	Properties p2 = new Properties();
 
-    
 	p2.setProperty("Address", "Central Police Line");
 	p2.setProperty("Mobno", "9898958969");
 	p2.setProperty("City", "Gwalior");
