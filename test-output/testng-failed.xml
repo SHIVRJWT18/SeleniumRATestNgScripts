@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RS01_GetApiActions.GetSingleRecord">
+      <class name="RS02_PostApiActions.ProvideRqstBodyUsingPOJOClass">
         <methods>
-          <include name="GetSingleUser"/>
+          <include name="createBookingUsingPOJO"/>
         </methods>
-      </class> <!-- RS01_GetApiActions.GetSingleRecord -->
+      </class> <!-- RS02_PostApiActions.ProvideRqstBodyUsingPOJOClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
