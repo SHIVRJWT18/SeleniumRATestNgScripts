@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-24T17:56:57 IST" name="Default suite" finished-at="2026-10-24T17:57:01 IST" duration-ms="3724">
+  <suite started-at="2026-10-25T20:52:57 IST" name="Default suite" finished-at="2026-10-25T20:52:59 IST" duration-ms="2178">
     <groups>
     </groups>
-    <test started-at="2026-10-24T17:56:57 IST" name="Default test" finished-at="2026-10-24T17:57:01 IST" duration-ms="3724">
-      <class name="RS02_PostApiActions.ProvideRqstBodyUsingPOJOClass">
-        <test-method signature="createBookingUsingPOJO()[pri:0, instance:RS02_PostApiActions.ProvideRqstBodyUsingPOJOClass@233795b6]" started-at="2026-10-24T17:56:57 IST" name="createBookingUsingPOJO" finished-at="2026-10-24T17:57:01 IST" duration-ms="3646" status="PASS">
+    <test started-at="2026-10-25T20:52:57 IST" name="Default test" finished-at="2026-10-25T20:52:59 IST" duration-ms="2178">
+      <class name="RS01_GetApiActions.GetCallForLoggingResponse">
+        <test-method signature="getLogs()[pri:0, instance:RS01_GetApiActions.GetCallForLoggingResponse@233795b6]" started-at="2026-10-25T20:52:57 IST" name="getLogs" finished-at="2026-10-25T20:52:59 IST" duration-ms="2111" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createBookingUsingPOJO -->
-      </class> <!-- RS02_PostApiActions.ProvideRqstBodyUsingPOJOClass -->
+        </test-method> <!-- getLogs -->
+      </class> <!-- RS01_GetApiActions.GetCallForLoggingResponse -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
