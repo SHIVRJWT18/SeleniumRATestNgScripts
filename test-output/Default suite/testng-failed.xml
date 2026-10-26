@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RS01_GetApiActions.GetCallForLoggingResponse">
+      <class name="RS09_PrasingResponseBody.PrasingJsonResponse_JsonObject">
         <methods>
-          <include name="getLogs"/>
+          <include name="testFullResponse"/>
         </methods>
-      </class> <!-- RS01_GetApiActions.GetCallForLoggingResponse -->
+      </class> <!-- RS09_PrasingResponseBody.PrasingJsonResponse_JsonObject -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

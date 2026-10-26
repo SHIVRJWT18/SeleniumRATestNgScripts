@@ -17,7 +17,7 @@ public class GetCallForLoggingResponse {
 		   // .log().all();    // Prints all data in response 
 		  //  .log().body();   // Prints only body of the response
 		   // .log().cookies(); // Prints only cookies of the response
-		   // .log().headers(); // Prints only headers of the response
-		    .log().status();  // Prints only status of the response
+		    .log().headers(); // Prints only headers of the response
+		   // .log().status();  // Prints only status of the response
 	}
 }
