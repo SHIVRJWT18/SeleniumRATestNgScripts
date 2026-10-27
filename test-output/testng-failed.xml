@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RS09_PrasingResponseBody.PrasingJsonResponse_JsonObject">
+      <class name="RS11_FileOperations.FileUpload">
         <methods>
-          <include name="testFullResponse"/>
+          <include name="ArrayFileUpload"/>
         </methods>
-      </class> <!-- RS09_PrasingResponseBody.PrasingJsonResponse_JsonObject -->
+      </class> <!-- RS11_FileOperations.FileUpload -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
