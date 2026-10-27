@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RS11_FileOperations.FileUpload">
+      <class name="RS08_ApiSchemaValidations.XmlSchema">
         <methods>
-          <include name="ArrayFileUpload"/>
+          <include name="ValidateSchemaXml"/>
         </methods>
-      </class> <!-- RS11_FileOperations.FileUpload -->
+      </class> <!-- RS08_ApiSchemaValidations.XmlSchema -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

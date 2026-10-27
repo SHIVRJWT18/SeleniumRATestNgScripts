@@ -2,14 +2,9 @@ package RS09_PrasingResponseBody;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import io.restassured.path.xml.XmlPath;
 import io.restassured.response.Response;
-
-import org.json.JSONObject;
-
 import static io.restassured.RestAssured.*;
-
 import java.util.List;
 public class PrasingXmlResponse_XmlObject {
 
