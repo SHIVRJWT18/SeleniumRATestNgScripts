@@ -4,16 +4,21 @@ import org.hamcrest.Matcher;
 import org.testng.annotations.Test;
 
 import io.restassured.matcher.RestAssuredMatchers;
-import io.restassured.module.jsv.JsonSchemaValidator;
 
 import static io.restassured.RestAssured.*;
 
-import java.io.File;
 public class XmlSchema {
 
-	/* Base Url : https://mocktarget.apigee.net/xml
-	 * 
-	 * */
+	/**Note: Unlike JsonSchemaValidator, there is no separate XmlSchemaValidator class 
+	 * in Rest Assured. XML Schema validation is supported through RestAssuredMatchers, 
+	 * which provides methods such as matchesXsd() and matchesXsdInClasspath().
+	 * Base Url : https://mocktarget.apigee.net/xml
+	 */
+	
+	/*
+	 * Xml to Xsd Converter tool: https://www.site24x7.com/tools/xml-to-xsd.html
+	 */
+	
 	@Test
 	public void ValidateSchemaXml()
 	{
@@ -27,6 +32,7 @@ public class XmlSchema {
        .log().body()
 	   .body(RestAssuredMatchers.matchesXsdInClasspath(
 			   "RS08_ApiSchemaValidations/XmlResponseSchema.xsd"));
-    		   
+    	
+
 	} 		   
 }

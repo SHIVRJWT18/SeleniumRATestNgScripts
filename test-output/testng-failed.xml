@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RS08_ApiSchemaValidations.XmlSchema">
+      <class name="RS12_SerializationVsDeserialization.DeSerializationDemo">
         <methods>
-          <include name="ValidateSchemaXml"/>
+          <include name="ConvertJsonToPOJO"/>
         </methods>
-      </class> <!-- RS08_ApiSchemaValidations.XmlSchema -->
+      </class> <!-- RS12_SerializationVsDeserialization.DeSerializationDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

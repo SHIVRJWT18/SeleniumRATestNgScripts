@@ -1,5 +1,4 @@
 package RS08_ApiSchemaValidations;
-import static org.hamcrest.Matchers.*;
 
 import org.testng.annotations.Test;
 
