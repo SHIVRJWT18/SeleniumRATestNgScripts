@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RS12_SerializationVsDeserialization.DeSerializationDemo">
+      <class name="RS06_ApiRequestChaining.java.ChainingDemo">
         <methods>
-          <include name="ConvertJsonToPOJO"/>
+          <include name="createRecord"/>
+          <include name="partialUpdateRecord"/>
+          <include name="getRecord"/>
+          <include name="updateRecord"/>
         </methods>
-      </class> <!-- RS12_SerializationVsDeserialization.DeSerializationDemo -->
+      </class> <!-- RS06_ApiRequestChaining.java.ChainingDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

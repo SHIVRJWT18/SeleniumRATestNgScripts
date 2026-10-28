@@ -1,11 +1,10 @@
 package RS08_ApiSchemaValidations;
 
-import org.hamcrest.Matcher;
+import static io.restassured.RestAssured.given;
+
 import org.testng.annotations.Test;
 
 import io.restassured.matcher.RestAssuredMatchers;
-
-import static io.restassured.RestAssured.*;
 
 public class XmlSchema {
 
